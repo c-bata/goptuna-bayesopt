@@ -106,14 +106,8 @@ func generateParam(params []bo.Param, trial goptuna.FrozenTrial) map[bo.Param]fl
 			return nil
 		}
 
-		xr, ok := trial.Params[p.GetName()]
+		ir, ok := trial.InternalParams[p.GetName()]
 		if !ok {
-			return nil
-		}
-
-		// This function might be removed at https://github.com/c-bata/goptuna/pull/78/
-		ir, err := goptuna.ToInternalRepresentation(distributionInterface, xr)
-		if err != nil {
 			return nil
 		}
 
