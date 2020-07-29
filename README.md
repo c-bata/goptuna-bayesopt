@@ -1,6 +1,6 @@
 # goptuna-bayesopt
 
-[Goptuna](https://github.com/c-bata/goptuna) integration for [d4l3k/go-bayesopt](https://github.com/d4l3k/go-bayesopt/), the library for Gaussian Process based bayesian optimization.
+[Goptuna](https://github.com/c-bata/goptuna) sampler for Gaussian Process based bayesian optimization using [d4l3k/go-bayesopt](https://github.com/d4l3k/go-bayesopt/).
 This integration supports `SuggestUniform` API only.
 
 ```go
